@@ -1,0 +1,69 @@
+{
+    "urls":
+    {
+        "qa": "http://localhost:3000/",
+        "dev": "http://devlocalhost:3000/",
+        "stage": "http://stagelocalhost:3000/",
+        "prod": "http://prodlocalhost:3000/"
+    },
+    "data":[
+        {
+            "env": "qa",
+            "first_name": "Raja",
+            "last_name": "Babu",
+            "full_name": "Raja Babu",
+            "email_address": "raja.babu_01@gmail.com",
+            "new_email_address": "raja.babu_0000002@faker.com",
+            "password": "Password@123",
+            "confirm_password": "Password@123",
+            "invalid_email": "raja..xxx@gmail.com",
+            "invalid_password": "Pa1234567",
+            "unregistered_email": "unregistered@gmail.com",
+            "short_full_name": "Raja",
+            "missing_atsign_email": "raja.babu_01gmail.com",
+            "missing_domain_email": "raja.babu_01@",
+            "missing_local_email": "@gmail.com",
+            "spl_char_domain_email": "raja.babu_01@gmail$##.com",
+            "short_password": "P@123",
+            "non_numeric_password": "Password@",
+            "non_spl_char_password": "Password123",
+            "non_alpha_char_password": "123##123456",
+            "only_alpha_password": "Password",
+            "only_numeric_password": "123456789",
+            "only_spl_char_password": "#$$##1**!!",
+            "mismatch_confirm_password": "Password@12345"
+
+        },
+        {
+            "env": "dev",
+            "firstname": "Raja",
+            "lastname": "Babu", 
+            "fullname": "Raja Babu",
+            "emailaddress": "raja.babu_dev_01@gmail.com",
+            "password": "Password@123",
+            "confirmpassword": "Password@123",
+            "invalidemail": "raja..xxx@gmail.com",
+            "invalidpassword": "password@1234567",
+            "unregisteredemail": "unregistered@gmail.com"
+        },
+        {
+            "env": "stage",
+            "firstname": "Raja",
+            "lastname": "Babu",
+            "fullname": "Raja Babu",
+            "emailaddress": "raja.babu_stage_01@gmail.com",
+            "password": "Password@123",
+            "confirmpassword": "Password@123"
+        },
+        {
+            "env": "prod",
+            "firstname": "Raja",
+            "lastname": "Babu",
+            "fullname": "Raja Babu",
+            "emailaddress": "raja.babu__prod_01@gmail.com",
+            "password": "Password@123",
+            "confirmpassword": "Password@123"
+        }
+    ]
+    
+}

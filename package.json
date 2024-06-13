@@ -1,0 +1,29 @@
+{
+  "name": "sg_qa_test_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "env:test": "cross-env test_env=test npx playwright test",
+    "env:prod": "cross-env test_prod=prod npx playwright test",
+    "env:dev": "cross-env test_dev=dev npx playwright test"
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typescript framework"
+  ],
+  "author": "Raja Babu",
+  "license": "ISC",
+  "description": "Playwright Typescript Framework with Playwright Test Runner",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.0.0-beta.3",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
