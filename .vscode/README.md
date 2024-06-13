@@ -21,6 +21,23 @@ npm init playwright@latest
 Typescript
 Playwright Test for VScode
 
+dotenv
+npm install dotenv --save
+
+allure
+npm install -D allure-commandline  
+npx allure generate ./allure-results --clean  
+npx allure open ./allure-report/  
+
+Logger
+npm i winston
+npm i moment timezone
+npm install typescript @types/node @types/winston @types/moment-timezone
+
+8080 port and ui host
+npx playwright test --ui-port=8080 --ui-host=0.0.0.0
+
+
 
 Project structure
 

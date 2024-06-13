@@ -2,7 +2,6 @@ import path from 'path';
 import fs from 'fs';
 
 export function readJSONFile(filePath: string) {
-    // Resolve the path relative to the main script file to ensure portability
     const jsonFilePath = path.resolve(process.cwd(), filePath);
     try {
         const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf-8'));
@@ -20,5 +19,5 @@ export function getTestData(environment: string) {
         const selectedData = jsonData.data.find((item: { env: string }) => item.env === environment);
         return selectedData;
     }
-    return null; // Return null if JSON data is not available
+    return null; 
 }

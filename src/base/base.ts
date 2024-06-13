@@ -9,7 +9,7 @@ export let page: Page;
 // Common setup function
 export async function setup(browserType: BrowserType<Browser>) {
   page = await browserType
-    .launch({ headless: false })
+    .launch({ headless: true })
     .then((browser) => browser.newPage());
 }
 

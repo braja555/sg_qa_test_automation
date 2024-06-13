@@ -1,4 +1,5 @@
 import { Locator, Page } from "@playwright/test";
+import logger from "../../../utils/LoggerUtil";
 
 type HomePageSelectors = {
   readonly userDetailList: string;
@@ -22,10 +23,12 @@ export default class HomePage {
     emailAddress?: string,
     username?: string
   ): Promise<string | null | undefined> {
+    logger.info('Waiting for user details table')
     await this.page.waitForSelector(homePageSelectors.userDetailList);
     const usersDetailElements = await this.page.$$(
       homePageSelectors.userDetailList
     );
+    logger.info('Able to view the list of user details')
 
     for (const userDetailElement of usersDetailElements) {
       const userDetailText = await userDetailElement.textContent();
@@ -33,6 +36,7 @@ export default class HomePage {
         (emailAddress && userDetailText?.includes(emailAddress)) ||
         (username && userDetailText?.includes(username))
       ) {
+        logger.info('Found the user expected data')
         return userDetailText.trim();
       }
     }
@@ -50,5 +54,6 @@ export default class HomePage {
       throw new Error("Logout link not found.");
     }
     await logout.click();
+    logger.info('Logged out from application')
   }
 }
