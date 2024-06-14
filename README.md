@@ -112,6 +112,7 @@ Certainly! Here are concise descriptions for each concept in the context of an a
 ### Pre-Setup
 - Install Node.js and npm: Download and install from nodejs.org.
 - VS Code Extensions: Install "Playwright Test for VSCode" (Preferred).
+- Clone the repo to VS code.
 - Install dependencies:
    ```terminal
    npm init playwright@latest
@@ -120,7 +121,7 @@ Certainly! Here are concise descriptions for each concept in the context of an a
    npm install -D allure-commandline
    npm install typescript @types/node @types/winston @types/moment-timezone
    ```
-- Test Run Cmd
+- Test Run Cmd in Local
   ```terminal
    npx playwright test (to execute all tests in tests folder)
    npx playwright test --headed (to execute in headed mode)
@@ -140,7 +141,10 @@ Certainly! Here are concise descriptions for each concept in the context of an a
   ```terminal
    npx playwright show-report 
    ```
-  
+  - Test Run Cmd in Docker
+   ```terminal
+   npx playwright show-report 
+   ```
 ### Automated Test Scenarios
 
 1. Detailed manual test cases for Registration, Login, and Home page scenarios have been written to cover maximum possible scenarios. This ensures comprehensive coverage and helps identify candidates for automation. All test cases are documented and available in the shared Google Sheet [here](https://docs.google.com/spreadsheets/d/1_HUti7YAe1BZBDx3jPZ1sY-_CiOd3Slxq3N4oP0K6xs/edit?usp=sharing).
