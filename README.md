@@ -3,6 +3,7 @@
 ## Overview
 The test automation framework is designed to provide a robust, scalable, and feature-rich solution for automated testing of the Skyguard applications. The framework encompasses various features, including:
 
+- Page Object Model
 - Data-driven testing
 - Logging
 - Retry mechanism
@@ -32,8 +33,20 @@ The test automation framework is designed to provide a robust, scalable, and fea
 
 ## Getting Started
 - Installation instructions
-- Configuration setup
-- How to run tests
+- Configuration setup2
+# Precondition:
+
+1. Make sure the dev server up and running.
+2. node, npm, playwright should have already if not run the below commands
+
+# Install dependencies
+RUN npm install
+RUN npm init playwright@latest
+
+# Install browser binaries for Playwright
+RUN npx playwright install
+RUN npx playwright install-deps
+
 
 ## Features
 ### Data-Driven Testing
