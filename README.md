@@ -123,12 +123,24 @@ Certainly! Here are concise descriptions for each concept in the context of an a
 - Test Run Cmd
   ```terminal
    npx playwright test (to execute all tests in tests folder)
+   npx playwright test --headed (to execute in headed mode)
    npx playwright test --ui (to execute in playwright UI mode)
    npx playwright test --project==firefox (to execute in firefox browser only)
    npx playwright test login.spect.ts (to execute specific test class)
    npm playwright test --debug (to execute in debug mode)
    npx playwright test --ui-port=8080 --ui-host=0.0.0.0 (to execute in ui-port=8080)
    ```
+
+  - To View Allure Report after Test Execution Run Below Cmd
+  ```terminal
+   npx allure generate ./allure-results --clean  
+   npx allure open ./allure-report/  
+   ```
+   - To View Playwright Report after Test Execution Run Below Cmd
+  ```terminal
+   npx playwright show-report 
+   ```
+  
 ### Automated Test Scenarios
 
 1. Detailed manual test cases for Registration, Login, and Home page scenarios have been written to cover maximum possible scenarios. This ensures comprehensive coverage and helps identify candidates for automation. All test cases are documented and available in the shared Google Sheet [here](#).
