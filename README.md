@@ -1,4 +1,4 @@
-# Skyguard Test Automation Framework
+# Skyground Test Automation Framework
 
 ## Overview
 The test automation framework is engineered to deliver a robust, scalable, and comprehensive solution for automating the testing of Skyguard applications. This framework includes a variety of features such as:
