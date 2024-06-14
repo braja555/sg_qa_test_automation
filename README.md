@@ -143,7 +143,7 @@ Certainly! Here are concise descriptions for each concept in the context of an a
   
 ### Automated Test Scenarios
 
-1. Detailed manual test cases for Registration, Login, and Home page scenarios have been written to cover maximum possible scenarios. This ensures comprehensive coverage and helps identify candidates for automation. All test cases are documented and available in the shared Google Sheet [here](#).
+1. Detailed manual test cases for Registration, Login, and Home page scenarios have been written to cover maximum possible scenarios. This ensures comprehensive coverage and helps identify candidates for automation. All test cases are documented and available in the shared Google Sheet [here](https://docs.google.com/spreadsheets/d/1_HUti7YAe1BZBDx3jPZ1sY-_CiOd3Slxq3N4oP0K6xs/edit?usp=sharing).
 
 2. A total of 28 test scenarios have been identified and automated, ensuring robust test coverage for these functionalities.
 
