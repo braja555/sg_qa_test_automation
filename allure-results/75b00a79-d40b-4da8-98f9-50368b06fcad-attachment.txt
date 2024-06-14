@@ -1,0 +1,17 @@
+TAP version 13
+# Subtest: Registration Test
+ok 1 - Registration Test
+  ---
+  duration_ms: 0.5385
+  type: 'suite'
+  ...
+info: Existing screenshots have been flushed. {"timestamp":"2024-06-14T13:31:34+04:00"}
+info: Test setup completed for the following test case {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Execution started: Successful registration with valid credentials {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:31:35+04:00"}
+info: Execution ended: Successful registration with valid credentials {"timestamp":"2024-06-14T13:31:39+04:00"}

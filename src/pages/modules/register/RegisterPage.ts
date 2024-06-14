@@ -1,4 +1,5 @@
-import { ElementHandle, Locator, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
+import logger from "../../../utils/LoggerUtil";
 
 type RegisterPageSelectors = {
   readonly registerNav: string;
@@ -43,14 +44,12 @@ export default class RegisterPage {
   constructor(private page: Page) {
   }
 
-
-
   public async registerWithApplication(
     userfullname: string,
     emailaddress: string,
     password: string,
     confirm_password: string
-  ): Promise<void> {
+  ){
     await this.navigateToRegister();
     await this.enterUserFullName(userfullname);
     await this.enterEmailAddress(emailaddress);
@@ -59,43 +58,51 @@ export default class RegisterPage {
     await this.clickSubmitButton();
   }
 
-  public async navigateToRegister(): Promise<void> {
+  public async navigateToRegister() {
     this.page.reload();
     await this.page.getByTestId(registerPageSelectors.registerNav).click();
+    logger.info('Navigated to the registration page');
   }
 
-  private async enterUserFullName(userfullname: string): Promise<void> {
+  private async enterUserFullName(userfullname: string) {
     const fullNameInput = this.page.getByTestId(registerPageSelectors.yourNameInput);
     await fullNameInput.clear();
     await fullNameInput.fill(userfullname);
+    logger.info('Entered user fullname');
   }
 
-  private async enterEmailAddress(emailaddress: string): Promise<void> {
+  private async enterEmailAddress(emailaddress: string) {
     const emailInput = this.page.getByTestId(registerPageSelectors.emailInput);
     await emailInput.clear();
     await emailInput.fill(emailaddress);
+    logger.info('Entered email address');
   }
 
-  private async enterPassword(password: string): Promise<void> {
+  private async enterPassword(password: string) {
     const passwordInput = this.page.getByTestId(registerPageSelectors.passwordInput);
     await passwordInput.clear();
     await passwordInput.fill(password);
+    logger.info('Entered password');
   }
 
-  private async enterConfirmPassword(confirm_password: string): Promise<void> {
+  private async enterConfirmPassword(confirm_password: string) {
     const confirmPasswordInput = this.page.getByTestId(
       registerPageSelectors.confirmPasswordInput
     );
     await confirmPasswordInput.clear();
     await confirmPasswordInput.fill(confirm_password);
+    logger.info('Entered confirm password');
   }
 
-  private async clickSubmitButton(): Promise<void> {
+  private async clickSubmitButton() {
     await this.page.getByTestId(registerPageSelectors.submitButton).click();
+    logger.info('Clicked on submit button for registration');
   }
 
-  public async logoutApplication(): Promise<void> {
+  public async logoutApplication() {
     const logout = this.page.getByTestId(registerPageSelectors.hereLink);
     await logout.click();
+    logger.info('Logged out from the application');
   }
+
 }

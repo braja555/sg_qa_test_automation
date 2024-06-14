@@ -1,0 +1,9 @@
+info: Test setup completed for the following test case {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Execution started: Validating the "here" link in the welcome message {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Clicked on login navigation link {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Entered email address for login {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Entered password for login {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Clicked on submit button for login {"timestamp":"2024-06-14T13:16:47+04:00"}
+info: Execution ended: Validating the "here" link in the welcome message {"timestamp":"2024-06-14T13:17:00+04:00"}
+info: Screenshot taken and saved. {"timestamp":"2024-06-14T13:17:00+04:00"}
+info: Test teardown completed {"timestamp":"2024-06-14T13:17:00+04:00"}

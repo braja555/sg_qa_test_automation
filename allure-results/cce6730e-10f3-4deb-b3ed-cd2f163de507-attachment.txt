@@ -1,0 +1,7 @@
+info: Test setup completed for the following test case {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Execution started: Validation for empty email and password fields {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Clicked on login navigation link {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Entered email address for login {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Entered password for login {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Clicked on submit button for login {"timestamp":"2024-06-14T13:31:22+04:00"}
+info: Execution ended: Validation for empty email and password fields {"timestamp":"2024-06-14T13:31:23+04:00"}

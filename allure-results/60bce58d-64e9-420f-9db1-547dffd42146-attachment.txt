@@ -1,0 +1,10 @@
+info: Test setup completed for the following test case {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Execution started: Validation for invalid email address error message {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:34+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:36+04:00"}
+info: Execution ended: Validation for invalid email address error message {"timestamp":"2024-06-14T13:32:37+04:00"}

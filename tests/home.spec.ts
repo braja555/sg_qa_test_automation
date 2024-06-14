@@ -17,45 +17,45 @@ test.beforeAll(async () => {
 })
 
 test.beforeEach(async () => {
+  test.setTimeout(60000);
   await setup(chromium);
   loginPage = new LoginPage(page);
   homePage = new HomePage(page);
   await page.goto(ENV.BASE_URL);
   await expect(page).toHaveURL(ENV.BASE_URL);
   testData = getTestData(ENV.ENVIRONMENT);
-});
-
-test.afterEach(async () => {
-  takeScreenshot();
+  logger.info('Test setup completed for the following test case');
 });
 
 test.afterAll(async () => {
   await teardown();
+  logger.info('Test teardown completed');
 });
 
-test("TC-01 User Email Address Validation in List of Emails", async () => {
-  logger.info('User email address validation in list of Emails execution is started')
+test("Verify User's Email Address in the List of Emails", async () => {
+  logger.info('Execution started: Verifying user email address in the list of emails');
   await loginPage.loginToApplication(testData.email_address, testData.password);
-  const actualEmail = await homePage.verifyUserDetailInList(testData.emailaddress);
-  expect(actualEmail, testData.emailaddress);
-  logger.info('User email address validation in list of Emails execution is ended')
+  const actualEmail = await homePage.verifyUserDetailInList(testData.email_address);
+  expect(actualEmail, testData.email_address);
+  logger.info('Execution ended: Verifying user email address in the list of emails');
 });
 
-test("TC-02 User Full Name Validation in List of Emails", async () => {
-  logger.info('User Full Name Validation in List of Emails is started')
+test("Verify User's Full Name in the List of Emails", async () => {
+  logger.info('Execution started: Verifying user full name in the list of emails');
   await loginPage.loginToApplication(testData.email_address, testData.password);
   const actualFullName = await homePage.verifyUserDetailInList(testData.full_name);
   expect(actualFullName, testData.full_name);
-  logger.info('User Full Name Validation in List of Emails is started')
+  logger.info('Execution ended: Verifying user full name in the list of emails');
 });
 
-test("TC-03 In Welcome Message 'here' Should be a Link Validation", async () => {
-  logger.info('In Welcome Message "here" Should be a Link Validation is started')
+test("Validate 'Here' Link in Welcome Message", async () => {
+  logger.info('Execution started: Validating the "here" link in the welcome message');
   await loginPage.loginToApplication(testData.email_address, testData.password);
   const hereLink = await homePage.verifyHereIsLinkInWelcomeMessage();
   expect(hereLink?.textContent(), "here");
   expect(await hereLink?.getAttribute("href")).not.toBeNull();
-  const tagName = await hereLink?.evaluate((el) => el.tagName);
-  expect(tagName?.toLowerCase(), "a");
-  logger.info('In Welcome Message "here" Should be a Link Validation is ended')
+  const tagName = await hereLink?.evaluate((el) => el.tagName.toLowerCase());
+  expect(tagName, "a");
+  logger.info('Execution ended: Validating the "here" link in the welcome message');
 });
+

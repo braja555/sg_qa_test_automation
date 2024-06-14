@@ -1,0 +1,49 @@
+info: Test setup completed for the following test case {"timestamp":"2024-06-14T13:32:12+04:00"}
+info: Execution started: Password validation tests {"timestamp":"2024-06-14T13:32:12+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Validation password error passed {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Execution ended: Password validation tests {"timestamp":"2024-06-14T13:32:13+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Validation password error passed {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Execution ended: Password validation tests {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Validation password error passed {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Execution ended: Password validation tests {"timestamp":"2024-06-14T13:32:14+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Validation password error passed {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Execution ended: Password validation tests {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Navigated to the registration page {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered user fullname {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered email address {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered password {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Entered confirm password {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Clicked on submit button for registration {"timestamp":"2024-06-14T13:32:15+04:00"}
+info: Validation alert error passed {"timestamp":"2024-06-14T13:32:20+04:00"}
+info: Validation password error passed {"timestamp":"2024-06-14T13:32:20+04:00"}
+info: Execution ended: Password validation tests {"timestamp":"2024-06-14T13:32:20+04:00"}
+info: Screenshot taken and saved. {"timestamp":"2024-06-14T13:32:21+04:00"}
+info: Test teardown completed {"timestamp":"2024-06-14T13:32:21+04:00"}

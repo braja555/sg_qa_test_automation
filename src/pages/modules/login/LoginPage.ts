@@ -1,4 +1,5 @@
 import { Page } from "@playwright/test";
+import logger from "../../../utils/LoggerUtil";
 
 type LoginPageSelectors = {
   readonly loginNavigationLink: string;
@@ -35,18 +36,21 @@ export default class LoginPage {
 
   private async clickLoginNavigator() {
     await this.page.getByTestId(loginPageSelectors.loginNavigationLink).click();
+    logger.info('Clicked on login navigation link');
   }
 
   private async enterEmailAddress(emailAddress: string) {
     const emailInput = await this.page.getByTestId(loginPageSelectors.loginEmailInput);
     await emailInput.clear();
     await emailInput.fill(emailAddress);
+    logger.info('Entered email address for login');
   }
 
   private async enterPassword(password: string) {
     const passwordInput = await this.page.getByTestId(loginPageSelectors.loginPasswordInput);
     await passwordInput.clear();
     await passwordInput.fill(password);
+    logger.info('Entered password for login');
   }
 
   async clickSubmitButton() {
@@ -57,5 +61,7 @@ export default class LoginPage {
       console.error(`Error clicking Submit button: ${error}`);
       throw error;
     });
+    logger.info('Clicked on submit button for login');
   }
+
 }

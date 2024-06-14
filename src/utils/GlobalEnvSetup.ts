@@ -1,5 +1,6 @@
 import { FullConfig } from '@playwright/test';
 import dotenv from "dotenv";
+import logger from './LoggerUtil';
 
 async function globalSetup(config: FullConfig) {
 
@@ -10,5 +11,7 @@ async function globalSetup(config: FullConfig) {
         })
     }  
 }
+
 export default globalSetup;
 
+logger.info('Global environment setup completed.');

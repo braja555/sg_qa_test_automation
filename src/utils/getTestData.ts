@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import logger from './LoggerUtil';
 
 export function readJSONFile(filePath: string) {
     const jsonFilePath = path.resolve(process.cwd(), filePath);
@@ -7,7 +8,7 @@ export function readJSONFile(filePath: string) {
         const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf-8'));
         return jsonData;
     } catch (error) {
-        console.error('Error reading JSON file:', error);
+        logger.error('Error reading JSON file:', error);
         return null;
     }
 }
@@ -21,3 +22,5 @@ export function getTestData(environment: string) {
     }
     return null; 
 }
+logger.info('JSON data read successfully.');
+
