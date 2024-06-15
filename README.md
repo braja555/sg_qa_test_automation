@@ -124,6 +124,8 @@ Certainly! Here are concise descriptions for each concept in the context of an a
 - Test Run Cmd in Local
   ```terminal
    npx playwright test (to execute all tests in tests folder)
+   npm run env:test (to execute test script on QA(test) environment)
+   npm run env:dev (to execute test script on dev environment: env is not ready)
    npx playwright test --headed (to execute in headed mode)
    npx playwright test --ui (to execute in playwright UI mode)
    npx playwright test --project==firefox (to execute in firefox browser only)
@@ -143,13 +145,16 @@ Certainly! Here are concise descriptions for each concept in the context of an a
    ```
   - Test Run Cmd in Docker
    ```terminal
-   npx playwright show-report 
+   docker pull mcr.microsoft.com/playwright:v1.44.1-jammy
+   docker run -it --rm --ipc=host mcr.microsoft.com/playwright:v1.44.1-jammy 
+   docker npx playwright test
    ```
 ### Automated Test Scenarios
 
 1. Detailed manual test cases for Registration, Login, and Home page scenarios have been written to cover maximum possible scenarios. This ensures comprehensive coverage and helps identify candidates for automation. All test cases are documented and available in the shared Google Sheet [here](https://docs.google.com/spreadsheets/d/1_HUti7YAe1BZBDx3jPZ1sY-_CiOd3Slxq3N4oP0K6xs/edit?usp=sharing).
 
-2. A total of 28 test scenarios have been identified and automated, ensuring robust test coverage for these functionalities.
+2. A total of 28 test scenarios have been identifi
+ed and automated, ensuring robust test coverage for these functionalities.
 
 ### Future Enhancement For Large Scale Project
 - API/Backend automation

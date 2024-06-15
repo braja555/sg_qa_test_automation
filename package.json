@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "env:test": "cross-env test_env=test npx playwright test",
-    "env:prod": "cross-env test_prod=prod npx playwright test",
-    "env:dev": "cross-env test_dev=dev npx playwright test"
+    "env:prod": "cross-env test_env=prod npx playwright test",
+    "env:dev": "cross-env test_env=dev npx playwright test"
   },
   "keywords": [
     "playwright test runner",
